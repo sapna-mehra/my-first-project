@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shelby Beta</title>
+<title>Shelby Public Beta</title>
 
 <style>
 body {
@@ -12,25 +12,24 @@ body {
   background: black;
   color: white;
   text-align: center;
-  overflow: hidden;
 }
 
 /* Glow Circle */
 .glow {
-  width: 150px;
-  height: 150px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
-  margin: 80px auto 20px;
+  margin: 100px auto 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: bold;
   color: white;
   background: black;
-  box-shadow: 0 0 30px orange,
-              0 0 60px orange,
-              0 0 100px orange;
+  box-shadow: 0 0 20px #ff8c00,
+              0 0 60px #ff8c00,
+              0 0 120px #ff8c00;
 }
 
 /* Text */
@@ -41,41 +40,41 @@ h2 {
 
 h3 {
   letter-spacing: 3px;
-  font-size: 18px;
-  margin-top: 20px;
+  font-size: 16px;
+  margin-top: 15px;
 }
 
 h1 {
-  font-size: 42px;
-  letter-spacing: 5px;
+  font-size: 38px;
+  letter-spacing: 4px;
   margin: 10px 0 30px;
 }
 
 /* Button */
 .btn {
-  padding: 14px 30px;
-  background: red;
+  padding: 14px 28px;
+  background: #ff1a1a;
   border: none;
   border-radius: 8px;
   color: white;
-  font-size: 16px;
+  font-size: 15px;
   cursor: pointer;
 }
 
 .btn:hover {
-  background: darkred;
+  background: #cc0000;
 }
 
 /* Bottom Glow */
 .bottom-glow {
-  position: absolute;
-  bottom: -100px;
+  position: fixed;
+  bottom: -50px;
   left: 50%;
   transform: translateX(-50%);
-  width: 600px;
-  height: 300px;
-  background: radial-gradient(circle, orange 0%, transparent 70%);
-  filter: blur(60px);
+  width: 400px;
+  height: 200px;
+  background: radial-gradient(circle, #ff8c00 0%, transparent 70%);
+  filter: blur(50px);
 }
 </style>
 </head>
@@ -88,9 +87,15 @@ h1 {
 <h3>PUBLIC BETA</h3>
 <h1>COMING SOON!</h1>
 
-<button class="btn">Register for Early Access</button>
+<button class="btn" onclick="goToLink()">Register for Early Access</button>
 
 <div class="bottom-glow"></div>
+
+<script>
+function goToLink() {
+  window.location.href = "https://t.me/yourlink"; // yaha apna link daal
+}
+</script>
 
 </body>
 </html>
