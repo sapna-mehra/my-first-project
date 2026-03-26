@@ -1,31 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Shybil Airdrop Tracker</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial;
-      text-align: center;
-      color: white;
-      background: black;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shelby Beta</title>
 
-    img {
-      width: 100%;
-      max-height: 500px;
-      object-fit: cover;
-    }
-  </style>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: black;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Glow Circle */
+.glow {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin: 80px auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  background: black;
+  box-shadow: 0 0 30px orange,
+              0 0 60px orange,
+              0 0 100px orange;
+}
+
+/* Text */
+h2 {
+  margin: 10px 0;
+  font-weight: normal;
+}
+
+h3 {
+  letter-spacing: 3px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 42px;
+  letter-spacing: 5px;
+  margin: 10px 0 30px;
+}
+
+/* Button */
+.btn {
+  padding: 14px 30px;
+  background: red;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: darkred;
+}
+
+/* Bottom Glow */
+.bottom-glow {
+  position: absolute;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: 300px;
+  background: radial-gradient(circle, orange 0%, transparent 70%);
+  filter: blur(60px);
+}
+</style>
 </head>
 
 <body>
 
-  <img src="IMG_20260326_131432.jpg" alt="banner">
+<div class="glow">S</div>
 
-  <h1>🚀 Shybil Airdrop Tracker</h1>
-  <p>Track • Earn • Grow</p>
+<h2>Shelby</h2>
+<h3>PUBLIC BETA</h3>
+<h1>COMING SOON!</h1>
+
+<button class="btn">Register for Early Access</button>
+
+<div class="bottom-glow"></div>
 
 </body>
 </html>
