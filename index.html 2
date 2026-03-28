@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Shelby Docs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #e2e8f0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #38bdf8;
+    }
+
+    h2 {
+      margin-top: 30px;
+      border-bottom: 1px solid #334155;
+      padding-bottom: 5px;
+      color: #22c55e;
+    }
+
+    .box {
+      background: #1e293b;
+      padding: 15px;
+      border-radius: 10px;
+      margin-top: 15px;
+    }
+
+    code {
+      display: block;
+      background: #020617;
+      padding: 10px;
+      border-radius: 8px;
+      color: #38bdf8;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>🚀 Shelby Quickstart Guide</h1>
+
+  <div class="box">
+    <h2>📋 System Requirements</h2>
+    <ul>
+      <li>Node v22+</li>
+      <li>Linux / MacOS</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h2>📦 Installation</h2>
+    <ol>
+      <li>Fork repository</li>
+      <li>Clone repo</li>
+    </ol>
+
+    <code>
+git clone https://github.com/your-repo.git
+cd your-repo
+    </code>
+  </div>
+
+  <div class="box">
+    <h2>⚡ Run Project</h2>
+
+    <code>
+npm install
+npm start
+    </code>
+  </div>
+
+  <div class="box">
+    <h2>🌐 Status</h2>
+    <p>🚧 Public Beta Coming Soon</p>
+  </div>
+
+</body>
+</html>
