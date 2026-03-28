@@ -3,106 +3,107 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shelby Public Beta</title>
+<title>Shelby Docs</title>
 
 <style>
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: black;
-  color: white;
-  text-align: center;
-}
-
-/* Glow Animation */
-@keyframes glowPulse {
-  0% { box-shadow: 0 0 20px #ff8c00, 0 0 60px #ff8c00; }
-  50% { box-shadow: 0 0 40px #ff8c00, 0 0 100px #ff8c00; }
-  100% { box-shadow: 0 0 20px #ff8c00, 0 0 60px #ff8c00; }
-}
-
-/* Circle */
-.glow {
-  width: 140px;
-  height: 140px;
-  border-radius: 50%;
-  margin: 100px auto 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 50px;
-  font-weight: bold;
-  color: white;
-  background: black;
-  animation: glowPulse 2s infinite;
-}
-
-/* Text */
-h2 {
-  margin: 10px 0;
-  font-weight: normal;
-}
-
-h3 {
-  letter-spacing: 3px;
-  font-size: 14px;
-  margin-top: 10px;
-  opacity: 0.8;
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 20px;
 }
 
 h1 {
-  font-size: 38px;
-  letter-spacing: 5px;
-  margin: 15px 0 30px;
+  text-align: center;
+  color: #38bdf8;
 }
 
-/* Button Gradient */
-.btn {
-  padding: 14px 30px;
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+h2 {
+  color: #22c55e;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.code-box {
+  background: #020617;
+  padding: 12px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+button {
+  background: #22c55e;
   border: none;
+  padding: 8px 14px;
   border-radius: 8px;
-  color: white;
-  font-size: 15px;
+  color: black;
   cursor: pointer;
-  background: linear-gradient(45deg, #ff0000, #ff6600);
-  box-shadow: 0 0 10px #ff3300;
-  transition: 0.3s;
 }
 
-.btn:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px #ff3300;
-}
-
-/* Bottom Glow */
-.bottom-glow {
-  position: fixed;
-  bottom: -60px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 450px;
-  height: 220px;
-  background: radial-gradient(circle, #ff8c00 0%, transparent 70%);
-  filter: blur(60px);
+button:hover {
+  background: #16a34a;
 }
 </style>
 </head>
 
 <body>
 
-<div class="glow">S</div>
+<h1>🚀 Shelby Docs</h1>
 
-<h2>Shelby</h2>
-<h3>PUBLIC BETA</h3>
-<h1>COMING SOON!</h1>
+<div class="card">
+  <h2>📋 System Requirements</h2>
+  <ul>
+    <li>Node v22 or later</li>
+    <li>Linux or MacOS</li>
+  </ul>
+</div>
 
-<button class="btn" onclick="goToLink()">Register for Early Access</button>
+<div class="card">
+  <h2>📦 Installation</h2>
+  <p>This repo requires Shelby CLI and Aptos installed.</p>
 
-<div class="bottom-glow"></div>
+  <ol>
+    <li>Fork this repository</li>
+    <li>Clone to local filesystem</li>
+    <li>Run:</li>
+  </ol>
+
+  <div class="code-box">
+    <span id="code1">npm install</span>
+    <button onclick="copyText('code1')">Copy</button>
+  </div>
+
+  <p>4. Build project:</p>
+
+  <div class="code-box">
+    <span id="code2">npm run build</span>
+    <button onclick="copyText('code2')">Copy</button>
+  </div>
+</div>
+
+<div class="card">
+  <h2>🛠 Setup</h2>
+  <p>Before using this repo, complete Shelby CLI setup.</p>
+</div>
 
 <script>
-function goToLink() {
-  window.location.href = "https://t.me/yourlink";
+function copyText(id) {
+  const text = document.getElementById(id).innerText;
+  navigator.clipboard.writeText(text);
+  alert("Copied: " + text);
 }
 </script>
 
