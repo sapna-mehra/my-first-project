@@ -1,62 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shelby Docs</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shelby Docs</title>
 
-<style>
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #0f172a;
-  color: #e2e8f0;
-  padding: 20px;
-}
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f172a;
+      color: #fff;
+      padding: 20px;
+    }
 
-h1 {
-  text-align: center;
-  color: #38bdf8;
-}
+    h1 {
+      text-align: center;
+      color: #38bdf8;
+    }
 
-.card {
-  background: #1e293b;
-  padding: 20px;
-  border-radius: 15px;
-  margin-top: 20px;
-}
+    .card {
+      background: #1e293b;
+      padding: 15px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
 
-h2 {
-  color: #22c55e;
-}
+    h2 {
+      color: #22c55e;
+    }
 
-ul {
-  padding-left: 20px;
-}
+    .code-box {
+      background: #020617;
+      padding: 10px;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 10px;
+    }
 
-.code-box {
-  background: #020617;
-  padding: 12px;
-  border-radius: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 10px;
-}
+    button {
+      background: #22c55e;
+      border: none;
+      padding: 8px 14px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
 
-button {
-  background: #22c55e;
-  border: none;
-  padding: 8px 14px;
-  border-radius: 8px;
-  color: black;
-  cursor: pointer;
-}
-
-button:hover {
-  background: #16a34a;
-}
-</style>
+    button:hover {
+      background: #16a34a;
+    }
+  </style>
 </head>
 
 <body>
@@ -99,26 +94,8 @@ button:hover {
   <p>Before using this repo, complete Shelby CLI setup.</p>
 </div>
 
-
-function copyText(id) {
-  const text = document.getElementById(id).innerText;
-  navigator.clipboard.writeText(text);
-
-  let msg = document.createElement("div");
-  msg.innerText = "Copied 🚀";
-  msg.style.position = "fixed";
-  msg.style.bottom = "20px";
-  msg.style.left = "50%";
-  msg.style.transform = "translateX(-50%)";
-  msg.style.background = "#22c55e";
-  msg.style.color = "#000";
-  msg.style.padding = "10px 20px";
-  msg.style.borderRadius = "8px";
-  msg.style.boxShadow = "0 0 10px #22c55e";
-
-  document.body.appendChild(msg);
-
-  <script>
+<!-- ✅ JS properly inside script -->
+<script>
 function copyText(id) {
   const text = document.getElementById(id).innerText;
   navigator.clipboard.writeText(text);
@@ -140,3 +117,6 @@ function copyText(id) {
   setTimeout(() => msg.remove(), 1500);
 }
 </script>
+
+</body>
+</html>
